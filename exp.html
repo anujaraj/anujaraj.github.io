@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="script.js"></script>
+    <title>Document</title>
+</head>
+<style>
+  body {font-family:cursive;}
+
+* {box-sizing: border-box;}
+/* The navbar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Navbar links */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+  
+#main{
+    background-color: black;
+  min-height: 700px;
+}
+#head{
+  color: #66FCF1;
+  font-family: cursive;
+  font-size: 35px;
+  margin: 50px;
+  /* margin-left:40vw; */
+  
+
+}
+.p{
+  font-size: 8px;
+}
+
+    #projects1{
+   
+   color:black;
+    background-color:black;
+    max-height: 800px;
+    max-width: 200px;
+    font-size: 17px;
+    margin-left:2vw;
+    transition: 4s ease-in-out;
+    animation: project 4s forwards;
+    margin-bottom:3vw;
+    
+ }
+ @keyframes project{
+   0%{
+    
+    background-color:black;
+    text-align: center;
+    opacity: 0.3;
+   }
+  
+   100%{
+     
+   background-color:#66FCF1;
+   border-radius: 1vw;
+   padding:2px;
+   transform:translateX(30%);
+   text-align: center;
+   opacity: 1;
+   }
+ }
+
+ #projects2{
+   
+   color:black;
+    background-color:black;
+    max-height: 800px;
+    max-width:200px;
+    transition: 4s ease-in-out;
+    margin-left:2vw;
+    font-size: 17px;
+    margin-bottom:3vw;
+    animation: project2 4s forwards;
+ }
+ 
+ 
+
+   @keyframes project2{
+   0%{
+  
+    background-color:black;
+    text-align: center;
+    opacity: 0.3;
+   }
+  
+   100%{
+     
+
+   background-color: #66FCF1;;
+   border-radius: 1vw;
+   padding:2px;
+   transform:translateX(30%);
+   text-align: center;
+   opacity: 1;
+   }
+ 
+
+ }
+ 
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 40%;
+  padding: 0 10px;
+  margin: 2vw;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 800px) {
+  .column {
+    width: 80%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  
+  padding: 16px;
+
+  text-align: center;
+  
+  color:transparent;
+  transition: 4s ease-in-out;
+    animation: reveal 4s  forwards;
+}
+@keyframes reveal{
+   0%{
+     color:transparent;
+    background-color:black;
+    transform: translateX(-5%);
+    opacity: 0.3;
+   }
+   
+ 
+   100%{
+     
+   color:black;
+   background-color: #66FCF1;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   transform: translateX(10%);
+   border-radius: 2vw;
+   opacity: 1;
+   }
+ 
+
+ }
+</style>
+<body>
+  
+  <div class="container">
+    <div class="topnav">
+      <a href="#about">About</a>
+      <a href="./projects.html">Projects</a>
+      <a href="./exp.html">Experiences</a>
+      <a href="./about.html#footer">Contact</a>
+    </div>
+
+</div>
+    <div id="main">
+      <span id="head">Experiences</span><br></br>
+       <div id="projects1">
+        
+        <p><span style="font-size: 20px;font-weight:bold;">Internships</span></p>
+        </div>
+        
+        <div class="row">
+            <div class="column">
+              <div class="card">
+                <p><span style="font-size: 15px;font-weight:bold;">Technical Lead-Edopt,Bangalore</span><p>
+                <p>June 2021-July 2022</p>
+                <p>Technologies used-Nodejs</p>
+                <p>Led a team of 6 into building and deploying companies website.</p>
+                <p>Created a doner donee interface.</p>
+              </div>
+            </div>
+          
+            <div class="column">
+              <div class="card">
+                <p><span style="font-size: 15px;font-weight:bold;">Developer Intern-Vasaas,Bangaore</span><p>
+                  <p>May 2021-June 2022</p>
+                  <p>Technologies used-Django</p>
+                  <p>Built the first model of the companie's website from scratch.</p>
+                  <p>Created the admin panel.</p>
+              </div>
+            </div>
+            
+
+          </div>
+          <div class="row">
+            <div class="column">
+              <div class="card">
+                <p><span style="font-size: 15px;font-weight:bold;">Backend Developer Intern-The Tarzan Way,Noida</span><p>
+                  <p>May 2020-June 2020</p>
+                  <p>Technologies used-Django</p>
+                  <p>Handled the Django Admin Site</p>
+                  
+              </div>
+            </div>
+          </div>
+          
+          <div id="projects2">
+        
+            <p><span style="font-size: 20px;font-weight:bold;">Positions Of Responsibility</span></p>
+            </div>
+            
+            <div class="row">
+                <div class="column">
+                  <div class="card">
+                    <p><span style="font-size: 15px;font-weight:bold;">Web Head,Students' Alumni Cell,IIT Kharagpur</span><p>
+                    <p>April 2020-July 2021</p>
+                    
+                    <p>• Designed and revamped the frontend of the official website of Students' Alumni Cell to improve the response time by 50%
+                      • Led a team of 6, creating and deploying web-applications including the Institute Yearbook Portal and Mentorship Portal</p>
+           
+                  </div>
+                </div>
+              
+                <div class="column">
+                  <div class="card">
+                    <p><span style="font-size: 15px;font-weight:bold;">Web Team Member, Students' Alumni Cell,IIT Kharagpur</span><p>
+                      <p>April 2019-April 2021</p>
+                      
+                      <p>• Organised the 17th Annual Alumni Meet for the graduating batches of 1980 &1995 accommodating about 350+ Alumni 
+                        • Organised Homecoming 2019 for the batches of 1990, 1999 &2009 and Golden Reunion 2020 for the batch of 1970
+                        </p>
+                      
+                  </div>
+                </div>
+                
+    
+              </div>
+              
+          
+    </div>
+    
+</body>
+</html>
